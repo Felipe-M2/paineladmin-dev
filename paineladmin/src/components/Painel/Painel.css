@@ -1,0 +1,129 @@
+.painelAdmin {
+    background-color: #596476;
+    max-width: 2000px;
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+}
+
+.contentAdmin{
+    border: 1px solid #fff;
+    border-radius: 10px;
+    height: 100%;
+    display: flex;
+    padding: 20px;
+    background-color: #ffffff2c;
+}
+
+.row{
+    width: 100%;
+    display: flex;
+    height: 50%;
+    gap: 20px;
+    padding: 10px;
+}
+
+.cadastros{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+}
+
+.cadastros > div{
+    padding: 20px;
+    height: 100%;
+    position: relative;
+}
+
+.cadastros h1{
+    font-size: 2.3rem;
+}
+
+.frase{
+    padding: 20px 0;
+}
+
+.frase h5{
+    opacity: .4;
+    padding: 10px 0;
+}
+
+.cadastros > div button{
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    width: 120px;
+    height: 30px;
+    background: #251BFF;
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.cadastros img{
+    height: 100%;
+    border-radius: 0 10px 10px 0;
+}
+
+
+
+.loguinInfo{
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.loguinInfo img{
+    width: 160px;
+}
+
+.infoUser{
+    width: 200px;
+    height: 80px;
+    background-color: #fff;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.infoUser div{
+    background-color: #596476;
+    width: auto;
+    min-width: 80px;
+    padding:  4px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    border-radius: 10px;
+    font-weight: 700;
+}
+
+.infoCadastros{
+    width: 50%;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.notas{
+    width: 50%;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.ferramentas{
+    width: 300px;
+    background-color: #fff;
+    border-radius: 20px;
+}
