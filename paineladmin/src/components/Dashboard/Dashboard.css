@@ -1,0 +1,28 @@
+.dashboard{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+}
+
+.grafico{
+    width: 100%;
+    height: 80%;
+}
+
+.menuDashboard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+    gap: 20px;
+}
+
+.menuDashboard button{
+    width: 110px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: #251BFF;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+}

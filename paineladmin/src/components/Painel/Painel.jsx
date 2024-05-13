@@ -1,9 +1,21 @@
+import { useState } from 'react';
 import './Painel.css';
 
 import Bicicleta from '../../assets/bicicleta.svg';
 import Logo from '../../assets/logo.svg';
 
+import Dashboard from '../Dashboard/Dashboard';
+import Notas from '../Notas/Notas';
+import MenuNav from '../MenuNav/MenuNav';
+import Ferramentas from '../Ferramentas/Ferramentas';
+
 function Painel() {
+
+    const [modal, setModal] = useState(false);
+
+    const closeModal = ()=>{
+        setModal(!modal);
+    }
 
     return (
         <>
@@ -24,7 +36,7 @@ function Painel() {
                                         <h5>-Carl Sagan</h5>
                                     </div>
 
-                                    <button>Cadastros</button>
+                                    <button onClick={closeModal}>Cadastros</button>
                                 </div>
 
                                 <img src={Bicicleta} alt="" />
@@ -50,20 +62,11 @@ function Painel() {
                         <section className="row">
 
                             <div className="infoCadastros">
-
+                                < Dashboard />
                             </div>
 
                             <div className="notas">
-
-                                <div className="titulo">
-                                    <img src="" alt="" />
-                                    <h1>Notas</h1>
-                                </div>
-
-                                <div className="cardsNotas">
-
-                                </div>
-
+                                < Notas />
                             </div>
 
                         </section>
@@ -71,23 +74,14 @@ function Painel() {
                     </section>
 
                     <section className="ferramentas">
-
-                        <div className="titulo">
-
-                            <img src="" alt="" />
-                            <h1>Ferramentas</h1>
-
-                        </div>
-
-                        <div className="listaFerramentas">
-
-                        </div>
-                        
+                        <Ferramentas/>
                     </section>
 
-                    <section className="modalCadastros">
-
-                    </section>
+                    {modal ? (
+                        <section className="modalCadastros">
+                            < MenuNav closeModal={closeModal} />
+                        </section>
+                    ): null}
 
                 </main>
             </body>

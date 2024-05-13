@@ -1,0 +1,16 @@
+.ferramentasDiv{
+    padding: 20px;
+}
+
+.topoFerramentas{
+    display: flex;
+    gap: 5px;
+}
+
+.topoFerramentas img{
+    width: 22px
+}
+
+.topoFerramentas h1{
+    text-decoration: underline;
+}
